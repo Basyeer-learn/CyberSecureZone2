@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Cybersecurity Tips</title>
+    <link href="Index-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <a href="index.html" class="logo"><img src="logo.png" alt="Website Logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Password Security.html">Password Security</a></li>
+            <li><a href="Phishing Scams.html">Phishing Scams</a></li>
+            <li><a href="Social Media Security.html">Social Media Security</a></li>
+            <li><a href="Resource Links.html">Resource Links</a></li>
+            <li><a href="Contact Form.html">Contact Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Cybersecurity Tips</h1>
+        <h2>Your Guide to Staying Safe Online</h2>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <!-- Top Island Section -->
+        <div class="island">
+            <h3>Introduction</h3>
+            <p>Welcome to Cybersecurity Tips! Our mission is to provide you with essential information and practical tips to keep you safe in the digital world. Whether you're concerned about password security, phishing scams, social media safety, or general cybersecurity best practices, we have the resources you need.</p>
+        </div>
+
+        <!-- Overview Section -->
+        <h3>What You'll Find Here</h3>
+        <div class="overview">
+            <div class="overview-item">
+                <img src="images/password-security.jpg" alt="Password Security">
+                <h4>Password Security</h4>
+                <p>Learn how to create strong passwords and manage them securely to protect your accounts from unauthorized access.</p>
+                <button onclick="location.href='Password Security.html'">Learn More</button>
+            </div>
+            <div class="overview-item">
+                <img src="images/phishing-scams.jpg" alt="Phishing Scams">
+                <h4>Avoiding Phishing Scams</h4>
+                <p>Discover the tactics scammers use to steal your information and how to avoid falling victim to phishing attacks.</p>
+                <button onclick="location.href='Phishing Scams.html'">Learn More</button>
+            </div>
+            <div class="overview-item">
+                <img src="images/social-media-safety.jpg" alt="Social Media Safety">
+                <h4>Social Media Safety</h4>
+                <p>Understand how to protect your privacy and personal information while using social media platforms.</p>
+                <button onclick="location.href='Social Media Security.html'">Learn More</button>
+            </div>
+            <!-- New Island 1 -->
+            <div class="overview-item">
+                <img src="images/secure-browsing.jpg" alt="Secure Browsing">
+                <h4>Secure Browsing</h4>
+                <p>Learn how to safely browse the web, including recognizing secure websites and avoiding dangerous sites.</p>
+                <button onclick="alert('Always verify the legitimacy of websites before interacting with them. Properly checking a site's authenticity is essential to safeguard your computer from viruses and other online threats.')">Learn More</button>
+            </div>
+            <!-- New Island 2 -->
+            <div class="overview-item">
+                <img src="images/device-security.jpg" alt="Device Security">
+                <h4>Device Security</h4>
+                <p>Discover best practices for keeping your devices secure from malware, viruses, and unauthorized access.</p>
+                <button onclick="alert(To keep your computer safe, regularly scan for viruses, remove any suspicious files, and ensure your antivirus software is up to date. Staying proactive with these steps will help protect your system from potential threats..')">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz-section">
+            <h3>Test Your Knowledge</h3>
+            <div class="quiz">
+                <div class="quiz-question">
+                    <h4>What is a strong password?</h4>
+                    <button onclick="checkAnswer(this, true)">A mix of letters, numbers, and symbols</button>
+                    <button onclick="checkAnswer(this, false)">Your birthdate</button>
+                    <button onclick="checkAnswer(this, false)">123456</button>
+                </div>
+                <div class="quiz-question">
+                    <h4>What should you do if you receive an email from an unknown sender?</h4>
+                    <button onclick="checkAnswer(this, true)">Do not open any links or attachments</button>
+                    <button onclick="checkAnswer(this, false)">Reply with personal information</button>
+                    <button onclick="checkAnswer(this, false)">Forward it to friends</button>
+                </div>
+                <div class="quiz-question">
+                    <h4>What is multi-factor authentication?</h4>
+                    <button onclick="checkAnswer(this, true)">An extra security step for login</button>
+                    <button onclick="checkAnswer(this, false)">A type of computer virus</button>
+                    <button onclick="checkAnswer(this, false)">A secure password manager</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Cybersecurity Tips. All Rights Reserved.
+    </footer>
+
+    <script src="Index-js.js"></script>
+</body>
+
+</html>

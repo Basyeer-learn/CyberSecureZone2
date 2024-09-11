@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Security</title>
+    <link href="Social-style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav>
+    <a href="index.html" class="logo"><img src="logo.png" alt="Website Logo"></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Password Security.html">Password Security</a></li>
+        <li><a href="Phishing Scams.html">Phishing Scams</a></li>
+        <li><a href="Social Media Security.html">Social Media Security</a></li>
+        <li><a href="Resource Links.html">Resource Links</a></li>
+        <li><a href="Contact Form.html">Contact Form</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Social Media Security</h1>
+    <h2>Stay Safe Online: Protect Your Privacy and Personal Information</h2>
+</header>
+
+<div class="content">
+    <h3>Key Tips for Social Media Security</h3>
+    <div class="tips">
+        <div class="tip">
+            <img src="images/privacy-settings.jpg" alt="Privacy Settings">
+            <h4>1. Use Strong Privacy Settings</h4>
+            <p>Ensure your social media profiles are private, and only share your information with people you trust.</p>
+            <button onclick="alert('Regularly review your privacy settings and limit who can see your posts and personal information.')">Learn More</button>
+        </div>
+        <div class="tip">
+            <img src="images/two-factor-auth.jpg" alt="Two-Factor Authentication">
+            <h4>2. Enable Two-Factor Authentication</h4>
+            <p>Activate two-factor authentication to add an extra layer of security to your social media accounts.</p>
+            <button onclick="alert('Two-factor authentication provides additional protection by requiring a second form of verification.')">Learn More</button>
+        </div>
+        <div class="tip">
+            <img src="images/strong-password.jpg" alt="Strong Password">
+            <h4>3. Use Strong and Unique Passwords</h4>
+            <p>Create strong, unique passwords for each of your social media accounts to prevent unauthorized access.</p>
+            <button onclick="alert('Never reuse passwords across multiple sites. Use a password manager to keep track of your passwords securely.')">Learn More</button>
+        </div>
+        <div class="tip">
+            <img src="images/avoid-public-wifi.jpg" alt="Avoid Public Wi-Fi">
+            <h4>4. Avoid Public Wi-Fi for Sensitive Actions</h4>
+            <p>Avoid accessing your social media accounts on public Wi-Fi networks, as they can be less secure.</p>
+            <button onclick="alert('If you must use public Wi-Fi, consider using a VPN to protect your data.')">Learn More</button>
+        </div>
+        <div class="tip">
+            <img src="images/report-suspicious.jpg" alt="Report Suspicious Activity">
+            <h4>5. Report Suspicious Activity</h4>
+            <p>Report any suspicious activity or messages on your social media accounts to the platform administrators.</p>
+            <button onclick="alert('Be vigilant about unusual behavior on your accounts and report it immediately.')">Learn More</button>
+        </div>
+    </div>
+
+    <div class="quiz-section">
+        <h3>Social Media Security Quiz</h3>
+        <div class="quiz">
+            <div class="quiz-question">
+                <img src="images/question1-social.jpg" alt="Question 1">
+                <h4>Which of the following enhances your social media security?</h4>
+                <button onclick="checkAnswer(this, true)">Enabling Two-Factor Authentication</button>
+                <button onclick="checkAnswer(this, false)">Using the same password across sites</button>
+                <button onclick="checkAnswer(this, false)">Ignoring suspicious messages</button>
+            </div>
+            <div class="quiz-question">
+                <img src="images/question2-social.jpg" alt="Question 2">
+                <h4>What should you do if you receive a suspicious friend request?</h4>
+                <button onclick="checkAnswer(this, true)">Ignore or report the request</button>
+                <button onclick="checkAnswer(this, false)">Accept without hesitation</button>
+                <button onclick="checkAnswer(this, false)">Share personal information</button>
+            </div>
+            <div class="quiz-question">
+                <img src="images/question3-social.jpg" alt="Question 3">
+                <h4>Why is it important to avoid public Wi-Fi for sensitive actions?</h4>
+                <button onclick="checkAnswer(this, true)">Public Wi-Fi is less secure</button>
+                <button onclick="checkAnswer(this, false)">It’s faster</button>
+                <button onclick="checkAnswer(this, false)">It’s more convenient</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Cybersecurity Tips. All Rights Reserved.
+</footer>
+
+<script src="Social-js.js"></script>
+</body>
+</html>

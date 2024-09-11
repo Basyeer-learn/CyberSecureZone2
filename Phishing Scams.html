@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avoiding Phishing Scams</title>
+    <link href="Phishing-style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav>
+    <a href="index.html" class="logo"><img src="logo.png" alt="Website Logo"></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Password Security.html">Password Security</a></li>
+        <li><a href="Phishing Scams.html">Phishing Scams</a></li>
+        <li><a href="Social Media Security.html">Social Media Security</a></li>
+        <li><a href="Resource Links.html">Resource Links</a></li>
+        <li><a href="Contact Form.html">Contact Form</a></li>
+    </ul>
+</nav>
+
+    <header>
+        <h1>Avoiding Phishing Scams</h1>
+        <h2>Stay Safe Online: Know the Signs, Protect Yourself</h2>
+    </header>
+
+    <div class="content">
+        <h3>Key Tips to Avoid Phishing Scams</h3>
+        <div class="tips">
+            <div class="tip">
+                <img src="images/think-before-click.jpg" alt="Think Before You Click">
+                <h4>1. Think Before You Click</h4>
+                <p>Always double-check links in emails or texts before clicking. Hover over the link to preview the URL, ensuring it leads to a trusted website.</p>
+                <button onclick="alert('Always verify links! Hovering over links to preview URLs is crucial to avoid phishing scams.')">Learn More</button>
+            </div>
+            <div class="tip">
+                <img src="images/verify-source.jpg" alt="Verify the Source">
+                <h4>2. Verify the Source</h4>
+                <p>If you receive an unexpected email from a financial institution or service provider, contact them directly using official channels to confirm the authenticity.</p>
+                <button onclick="alert('Contact official sources! Never trust unsolicited requests for personal information.')">Learn More</button>
+            </div>
+            <div class="tip">
+                <img src="images/beware-urgency.jpg" alt="Beware of Urgency">
+                <h4>3. Beware of Urgency</h4>
+                <p>Phishing scams often create a sense of urgency to trick you into immediate action. Take a step back and analyze the situation before responding.</p>
+                <button onclick="alert('Don\'t rush into actions! Urgent requests for personal details are a red flag.')">Learn More</button>
+            </div>
+            <div class="tip">
+                <img src="images/mfa.jpg" alt="Use Multi-Factor Authentication">
+                <h4>4. Use Multi-Factor Authentication</h4>
+                <p>Enable multi-factor authentication on your accounts for an extra layer of security, reducing the chances of unauthorized access.</p>
+                <button onclick="alert('Enhance your security with MFA! It adds an additional verification step, making it harder for attackers to gain access.')">Learn More</button>
+            </div>
+            <div class="tip">
+                <img src="images/update-software.jpg" alt="Keep Software Updated">
+                <h4>5. Keep Software Updated</h4>
+                <p>Regularly update your devices and software to protect against known vulnerabilities that attackers might exploit.</p>
+                <button onclick="alert('Stay updated! Software updates often include patches that fix vulnerabilities, keeping your devices secure.')">Learn More</button>
+            </div>
+        </div>
+
+        <div class="quiz-section">
+            <h3>Phishing Awareness Quiz</h3>
+            <div class="quiz">
+                <div class="quiz-question">
+                    <img src="images/question1.jpg" alt="Question 1">
+                    <h4>Which of the following is a sign of a phishing email?</h4>
+                    <button onclick="checkAnswer(this, true)">Suspicious URL</button>
+                    <button onclick="checkAnswer(this, false)">Secure Connection</button>
+                    <button onclick="checkAnswer(this, false)">Clear Branding</button>
+                </div>
+                <div class="quiz-question">
+                    <img src="images/question2.jpg" alt="Question 2">
+                    <h4>What should you do if you receive an unexpected email asking for personal information?</h4>
+                    <button onclick="checkAnswer(this, true)">Contact the sender through official channels</button>
+                    <button onclick="checkAnswer(this, false)">Provide the information requested</button>
+                    <button onclick="checkAnswer(this, false)">Ignore the email</button>
+                </div>
+                <div class="quiz-question">
+                    <img src="images/question3.jpg" alt="Question 3">
+                    <h4>What is the best way to protect yourself from phishing attacks?</h4>
+                    <button onclick="checkAnswer(this, true)">Enable Multi-Factor Authentication</button>
+                    <button onclick="checkAnswer(this, false)">Click on all links quickly</button>
+                    <button onclick="checkAnswer(this, false)">Only trust emails from known senders</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Cybersecurity Tips. All Rights Reserved.
+    </footer>
+
+    <script>
+        function checkAnswer(button, isCorrect) {
+            if (isCorrect) {
+                button.style.backgroundColor = '#90EE90';
+                alert('Correct! Well done.');
+            } else {
+                button.style.backgroundColor = '#FF6F61';
+                alert('Incorrect. Remember to always be cautious with phishing scams.');
+            }
+        }
+		// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('nav').classList.add('scrolled');
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="Contact-style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <a href="index.html" class="logo"><img src="logo.png" alt="Website Logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Password Security.html">Password Security</a></li>
+            <li><a href="Phishing Scams.html">Phishing Scams</a></li>
+            <li><a href="Social Media Security.html">Social Media Security</a></li>
+            <li><a href="Resource Links.html">Resource Links</a></li>
+            <li><a href="Contact Form.html">Contact Form</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+        <h2>We’d love to hear from you!</h2>
+    </header>
+
+    <div class="content">
+        <h3>Ask Us a Question or Share Feedback</h3>
+        <p>Do you have any questions about cybersecurity? Or perhaps some feedback on our website? Feel free to reach out to us by submitting the form below. We aim to provide reliable cybersecurity information and improve the user experience based on your suggestions.</p>
+
+        <form id="contact-form" action="https://formspree.io/f/mgvwqzol" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Overlay for Thank You Island -->
+        <div id="overlay" class="overlay"></div>
+
+        <div id="thank-you-island" class="thank-you-island">
+            <button id="close-thank-you" onclick="closeThankYou()">✖</button>
+            <h3>Thank You!</h3>
+            <p>We have received your message and will get back to you shortly.</p>
+            <button id="submit-again" onclick="submitAgain()">Submit Another Form</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Cybersecurity Tips. All Rights Reserved.
+    </footer>
+
+    <script src="Contact-js.js"></script>
+</body>
+</html>
